@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adv_card_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layoutDirection="rtl"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/adv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/image_rounded_bg_cyan"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_rounded_bg_cyan"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/adv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adv_cover"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/advertisement_title"
+                fontPath="fonts/IRANSans.ttf"
+                android:textDirection="rtl"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:id="@+id/adv_meta_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/adv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/adv_post_icon_location"
+                    android:drawablePadding="5dp"
+                    android:minWidth="80dp"
+                    android:text="location"
+                    fontPath="fonts/IRANSans.ttf"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:id="@+id/adv_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/adv_post_icon_time"
+                    android:drawablePadding="5dp"
+                    android:minWidth="80dp"
+                    android:gravity="center"
+                    android:text="time and date"
+                    fontPath="fonts/IRANSans.ttf"
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/adv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@+id/adv_meta_1"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="15dp"
+                android:drawableStart="@drawable/adv_post_icon_price"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Item Price"
+                fontPath="fonts/IRANSans.ttf"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

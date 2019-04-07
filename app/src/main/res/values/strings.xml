@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">جوینده</string>
+    <string name="access_token">pk.eyJ1IjoiY29udG9yaWVsIiwiYSI6ImNqcjh6dmNmcjBicTE0NGw4NXlqd2x4dDkifQ.e4VHF3syl_pBOv1wDhb3MA</string>
+    <string name="user_location_permission_explanation">Location permission is needed for searching advertisements</string>
+    <string name="advertisement_title">Advertisement Title</string>
+    <string name="home_search_key_label">جستجو در این منطقه</string>
+</resources>
